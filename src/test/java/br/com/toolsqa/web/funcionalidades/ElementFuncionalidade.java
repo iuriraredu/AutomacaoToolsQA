@@ -1,6 +1,7 @@
 package br.com.toolsqa.web.funcionalidades;
 
 import br.com.toolsqa.communs.SeleniumRobot;
+import br.com.toolsqa.enums.Web;
 import br.com.toolsqa.settings.BaseTest;
 import br.com.toolsqa.web.pages.ElementPage;
 
@@ -30,6 +31,11 @@ public class ElementFuncionalidade extends BaseTest {
                 this.elementPage.getOpcaoCheckBox());
     }
 
+    private void clicarEmOpcaoWebTables() {
+        this.seleniumRobot.esperarElementoEstarClicavelEClicar(
+                this.elementPage.getOpcaoWebTables());
+    }
+
     public void clicoNaOpcao(String opcao) {
         switch (opcao) {
             case "TextBox":
@@ -38,6 +44,11 @@ public class ElementFuncionalidade extends BaseTest {
             case "CheckBox":
                 clicarEmOpcaoCheckBox();
                 break;
+            case "Web Tables":
+                clicarEmOpcaoWebTables();
+                break;
+            default:
+                throw new IllegalStateException("Unexpected value: " + opcao);
         }
     }
 }

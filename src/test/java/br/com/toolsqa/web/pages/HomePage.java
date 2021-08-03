@@ -14,7 +14,14 @@ public class HomePage {
     @FindBy(xpath = "//h5[text()='Elements']/parent:: div/parent:: div")
     private WebElement cardElements;
 
+    @FindBy(xpath = "//h5[text()='Forms']/parent:: div/parent:: div")
+    private WebElement cardForms;
+
     public WebElement getCardElements() {
         return cardElements;
+    }
+
+    public WebElement getCardForms() {
+        return cardForms;
     }
 }

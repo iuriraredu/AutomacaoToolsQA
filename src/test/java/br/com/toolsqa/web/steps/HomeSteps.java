@@ -16,7 +16,7 @@ public class HomeSteps {
     }
 
     @Dado("que clico no card {string}")
-    public void queClicoNoCard(String arg0) {
-        this.homeFuncionalidade.clicarNoCardElements();
+    public void queClicoNoCard(String opcao) {
+        this.homeFuncionalidade.clicoNoCard(opcao);
     }
 }

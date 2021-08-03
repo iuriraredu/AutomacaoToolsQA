@@ -20,4 +20,18 @@ public class HomeFuncionalidade extends BaseTest {
                 this.homePage.getCardElements()
         );
     }
+
+    public void clicarNoCardForms() {
+        this.seleniumRobot.scroll();
+        this.seleniumRobot.esperarElementoEstarClicavelEClicar(
+                this.homePage.getCardForms()
+        );
+    }
+
+    public void clicoNoCard(String opcao) {
+        if (opcao.equals("Elements"))
+            clicarNoCardElements();
+        else if (opcao.equals("Forms"))
+            clicarNoCardForms();
+    }
 }

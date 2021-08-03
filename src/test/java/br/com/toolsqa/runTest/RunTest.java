@@ -9,8 +9,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = {"src/test/resources"},
         glue = {"br.com.toolsqa.web", "br.com.toolsqa.settings"},
-        plugin = {"pretty", "json:target/cucumber.json"},
-        strict = true
+        plugin = {"pretty", "json:target/cucumber.json"}
 )
 public class RunTest extends BaseTest {
 }
