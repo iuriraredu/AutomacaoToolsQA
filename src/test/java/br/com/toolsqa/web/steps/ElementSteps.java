@@ -12,8 +12,8 @@ public class ElementSteps {
     }
 
     @Dado("que navego ate pagina de {string}")
-    public void queNavegoAtePaginaDe(String arg0) {
-        this.elementFuncionalidade.clicarEmMenuELements();
-        this.elementFuncionalidade.clicarEmOpcaoTextBox();
+    public void queNavegoAtePaginaDe(String opcao) {
+        //this.elementFuncionalidade.clicarEmMenuELements();
+        this.elementFuncionalidade.clicoNaOpcao(opcao);
     }
 }

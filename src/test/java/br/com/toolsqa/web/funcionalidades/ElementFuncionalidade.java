@@ -24,4 +24,20 @@ public class ElementFuncionalidade extends BaseTest {
         this.seleniumRobot.esperarElementoEstarClicavelEClicar(
                 this.elementPage.getOpcaoTextBox());
     }
+
+    public void clicarEmOpcaoCheckBox() {
+        this.seleniumRobot.esperarElementoEstarClicavelEClicar(
+                this.elementPage.getOpcaoCheckBox());
+    }
+
+    public void clicoNaOpcao(String opcao) {
+        switch (opcao) {
+            case "TextBox":
+                clicarEmOpcaoTextBox();
+                break;
+            case "CheckBox":
+                clicarEmOpcaoCheckBox();
+                break;
+        }
+    }
 }

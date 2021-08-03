@@ -17,11 +17,18 @@ public class ElementPage {
     @FindBy(xpath = "//span[text()='Text Box']")
     private WebElement opcaoTextBox;
 
+    @FindBy(xpath = "//span[text()='Check Box']")
+    private WebElement opcaoCheckBox;
+
     public WebElement getMenuElements() {
         return menuElements;
     }
 
     public WebElement getOpcaoTextBox() {
         return opcaoTextBox;
+    }
+
+    public WebElement getOpcaoCheckBox() {
+        return opcaoCheckBox;
     }
 }

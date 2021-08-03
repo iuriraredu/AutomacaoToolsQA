@@ -23,3 +23,13 @@ Funcionalidade: Elementos do site ToolsQA
       | Full_Name    | Email                | Current_Address | Permanent_Address |
       | Mariah Carey | mariah@epic.com      | NYC, US         | TX, US            |
       | Beyoncé      | beyonce@parkwood.com | TX, US          | NYC, US           |
+
+
+  @web @CheckBox
+  Cenario: Selecionar a opcao "Private"
+    Dado que navego ate pagina de "CheckBox"
+    E clico na seta ao lado de "Home"
+    E clico na seta ao lado de "Documents"
+    E clico na seta ao lado de "Office"
+    Quando clico em "Private"
+    Entao é apresentado a mensagem "You have selected :private"
