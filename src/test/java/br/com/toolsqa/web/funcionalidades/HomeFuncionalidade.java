@@ -3,6 +3,7 @@ package br.com.toolsqa.web.funcionalidades;
 import br.com.toolsqa.communs.SeleniumRobot;
 import br.com.toolsqa.settings.BaseTest;
 import br.com.toolsqa.web.pages.HomePage;
+import org.openqa.selenium.WebElement;
 
 public class HomeFuncionalidade extends BaseTest {
 
@@ -15,17 +16,16 @@ public class HomeFuncionalidade extends BaseTest {
     }
 
     public void clicarNoCardElements() {
-        this.seleniumRobot.scroll();
-        this.seleniumRobot.esperarElementoEstarClicavelEClicar(
-                this.homePage.getCardElements()
-        );
+        realizarScrollEsperarEstarVisivelEClicar(this.homePage.getCardElements());
     }
 
     public void clicarNoCardForms() {
+        realizarScrollEsperarEstarVisivelEClicar(this.homePage.getCardForms());
+    }
+
+    private void realizarScrollEsperarEstarVisivelEClicar(WebElement elements) {
         this.seleniumRobot.scroll();
-        this.seleniumRobot.esperarElementoEstarClicavelEClicar(
-                this.homePage.getCardForms()
-        );
+        this.seleniumRobot.esperarElementoEstarClicavelEClicar(elements);
     }
 
     public void clicoNoCard(String opcao) {

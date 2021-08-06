@@ -7,6 +7,10 @@
 @Elements
 Funcionalidade: Elementos do site ToolsQA
 
+  Como um usuario do ToolsQA
+  Quero testar todos os elementos
+  Para aprender a mapear elementos em cenários de teste web
+
   Contexto: Acessar Página de Elements
     Dado que clico no card "Elements"
 
@@ -17,12 +21,10 @@ Funcionalidade: Elementos do site ToolsQA
     Quando clico no botao "Submit"
     Entao eh apresentado os campos "<Full_Name>", "<Email>", "<Current_Address>" e "<Permanent_Address>" preenchidos corretamente
 
-
     Exemplos:
       | Full_Name    | Email                | Current_Address | Permanent_Address |
       | Mariah Carey | mariah@epic.com      | NYC, US         | TX, US            |
       | Beyoncé      | beyonce@parkwood.com | TX, US          | NYC, US           |
-
 
   @web @CheckBox
   Cenario: Selecionar a opcao "Private"
@@ -44,7 +46,7 @@ Funcionalidade: Elementos do site ToolsQA
   @web @WebTables @Alteracao
   Cenario: Alterar dados em uma Web Table
     Dado que navego ate pagina de "Web Tables"
-    E clico no botao com o simbolo de um lapis na linha de First Name Cierra
+    E clico no botao com o simbolo de um lapis na linha de First Name "Cierra"
     E altero os dados solicitados
     Quando clico no botao para "Submit"
     Entao eh atualizado os dados da linha da Web Table
@@ -52,5 +54,5 @@ Funcionalidade: Elementos do site ToolsQA
   @web @WebTables @Exclusao
   Cenario: Excluir dados em uma Web Table
     Dado que navego ate pagina de "Web Tables"
-    Quando clico no botao com o simbolo de um lixeira na linha de First Name Cierra
+    Quando clico no botao com o simbolo de um lixeira na linha de First Name "Cierra" e Last Name "Vega"
     Entao a linha de First Name Cierraa da Web Table não está mais visivel
