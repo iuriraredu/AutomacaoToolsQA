@@ -6,6 +6,8 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
+import java.util.List;
+
 public class SeleniumRobot extends BaseTest {
 
     public void scroll() {
@@ -25,4 +27,19 @@ public class SeleniumRobot extends BaseTest {
     public WebElement mapearElemento(String xPath) {
         return webDriver.findElement(By.xpath(xPath));
     }
+
+    /**
+     * Busca elementos pelo parametro informado
+     * @param xPath que deve ser informado quando for realizar a busca
+     * @return List<WebElement> dos elementos localizados pelo xpath informado
+     */
+    public List<WebElement> buscaVariosElementosPor(String xPath){
+        return webDriver.findElements(By.xpath(xPath));
+    }
 }
+/* return (webDriver.findElements(By.xpath(xPath)).size() > 0);
+ *     /**
+ *      * Verificar se um elemento está presente pelo xpath
+ *      * @param xPath do elemento a ser localizado
+ *      * @return "true" se pelo menos um elemento for encontrado e "false" se ele não existir.
+ *      */

@@ -73,17 +73,15 @@ public class WebTablesPage {
 
     public WebElement getBotaoEditarPelo(String primeiroNome){
         return this.seleniumRobot.mapearElemento(
-                "//div[text()='" + primeiroNome +
-                        "']/following-sibling:: div/div/span[@class='mr-2']"
+                "//div[text()='" + primeiroNome + "']/following-sibling:: div/div/span[@class='mr-2']"
         );
     }
 
     public WebElement getBotaoExcluirPelo(String primeiroNome, String ultimoNome){
-        return this.seleniumRobot.mapearElemento(
-                "//div[text()='"+ primeiroNome +
-                        "']/following-sibling::div[text()='"+ ultimoNome +
-                        "']/following-sibling::div/div/span[@class='mr-2']"
-        );
+        String xPath = "//div[text()='"+ primeiroNome +
+                "']/following-sibling::div[text()='"+ ultimoNome +
+                "']/following-sibling::div/div/span[@title='Delete']";
+        return this.seleniumRobot.mapearElemento(xPath);
     }
 
     public WebElement getCamposTabelaPelo(String texto){

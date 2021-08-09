@@ -30,12 +30,12 @@ public abstract class BaseTest {
         webDriver.close();
     }
 
-    public static void screenShotReporter(String nomeMetodo){
+    public static void screenShotReport(String nomeMetodo){
         File screenshot = ((TakesScreenshot)webDriver).getScreenshotAs(OutputType.FILE);
         try {
             FileUtils.copyFile(screenshot, new File("test-output/Screenshot/" +
-                    new SimpleDateFormat("yyyy-MM-dd-hhmmss").
-                            format(new Timestamp(System.currentTimeMillis())) + "_" + nomeMetodo + ".png"));
+                    new SimpleDateFormat("yyyy-MM-dd-hhmmss").format(new Timestamp(System.currentTimeMillis())) +
+                    "_" + nomeMetodo + ".png"));
         } catch (Exception e){
             System.out.println("Houveram problemas ao copiar o arquivo para pasta!\n"+e.getMessage());
         }

@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         features = {"src/test/resources"},
         glue = {"br.com.toolsqa.web", "br.com.toolsqa.settings"},
         plugin = {"pretty", "json:test-output/Json/cucumber.json"},
-        tags = "@TextBox"
+        tags = "@Buttons"
 )
 public class RunTest extends BaseTest {
 }

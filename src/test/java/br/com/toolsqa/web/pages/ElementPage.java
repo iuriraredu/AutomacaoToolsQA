@@ -23,6 +23,9 @@ public class ElementPage {
     @FindBy(xpath = "//span[text()='Web Tables']")
     private WebElement opcaoWebTables;
 
+    @FindBy(xpath = "//span[text()='Buttons']")
+    private WebElement opcaoButtons;
+
     public WebElement getMenuElements() {
         return menuElements;
     }
@@ -37,5 +40,9 @@ public class ElementPage {
 
     public WebElement getOpcaoWebTables() {
         return opcaoWebTables;
+    }
+
+    public WebElement getOpcaoButtons() {
+        return opcaoButtons;
     }
 }

@@ -32,8 +32,15 @@ public class ElementFuncionalidade extends BaseTest {
     }
 
     private void clicarEmOpcaoWebTables() {
+        this.seleniumRobot.scroll();
         this.seleniumRobot.esperarElementoEstarClicavelEClicar(
                 this.elementPage.getOpcaoWebTables());
+    }
+
+    private void clicarEmOpcaoButtons() {
+        this.seleniumRobot.scroll();
+        this.seleniumRobot.esperarElementoEstarClicavelEClicar(
+                this.elementPage.getOpcaoButtons());
     }
 
     public void clicoNaOpcao(String opcao) {
@@ -46,6 +53,9 @@ public class ElementFuncionalidade extends BaseTest {
                 break;
             case "Web Tables":
                 clicarEmOpcaoWebTables();
+                break;
+            case "Buttons":
+                clicarEmOpcaoButtons();
                 break;
             default:
                 throw new IllegalStateException("Unexpected value: " + opcao);

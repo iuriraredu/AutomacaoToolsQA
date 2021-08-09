@@ -6,7 +6,6 @@ import io.cucumber.java.AfterStep;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 
-
 public class Hooks extends BaseTest {
 
     private int cont;
@@ -21,7 +20,7 @@ public class Hooks extends BaseTest {
     @AfterStep(value = "@web")
     public void reportScreenShot(Scenario scenario){
         cont++;
-        screenShotReporter(scenario.getName() + "_Step" + cont);
+        screenShotReport(scenario.getName() + "_Step" + cont);
     }
 
     @After(value = "@web")

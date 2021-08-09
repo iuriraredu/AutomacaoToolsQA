@@ -3,6 +3,9 @@ package br.com.toolsqa.web.funcionalidades;
 import br.com.toolsqa.communs.SeleniumRobot;
 import br.com.toolsqa.settings.BaseTest;
 import br.com.toolsqa.web.pages.WebTablesPage;
+import org.openqa.selenium.WebElement;
+
+import java.util.List;
 
 public class WebTablesFuncionalidade extends BaseTest {
     private WebTablesPage webTablesPage;
@@ -66,5 +69,18 @@ public class WebTablesFuncionalidade extends BaseTest {
 
     public String textoDosCampos(String texto){
         return this.webTablesPage.getCamposTabelaPelo(texto).getText();
+    }
+
+    public boolean verificaSeEncontraLinhaComOsDados(String primeiroNome, String ultimoNome,String email,
+                                        String idade, String salario, String departamento){
+        String xPath = ("//div[" +
+                "div[text()='" + primeiroNome + "' and following-sibling:: " +
+                "div[text()='" + ultimoNome + "' and following-sibling:: " +
+                "div[text()='" + idade + "' and following-sibling:: " +
+                "div[text()='" + email + "' and following-sibling:: " +
+                "div[text()='" + salario + "' and following-sibling:: " +
+                "div[text()='" + departamento + "']]]]]]]");
+        List<WebElement> webElements = this.seleniumRobot.buscaVariosElementosPor(xPath);
+        return webElements.size() > 0;
     }
 }

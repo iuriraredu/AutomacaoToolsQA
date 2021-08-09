@@ -17,14 +17,14 @@ Funcionalidade: Elementos do site ToolsQA
   @web @TextBox
   Esquema do Cenario: Realizar preenchimento de TextBox
     Dado que navego ate pagina de "TextBox"
-    E realizo preenchimento dos campos "<Full_Name>", "<Email>", "<Current_Address>" e "<Permanent_Address>"
+    E realizo preenchimento dos campos <Full_Name>, "<Email>", "<Current_Address>" e "<Permanent_Address>"
     Quando clico no botao "Submit"
-    Entao eh apresentado os campos "<Full_Name>", "<Email>", "<Current_Address>" e "<Permanent_Address>" preenchidos corretamente
+    Entao eh apresentado os campos <Full_Name>, "<Email>", "<Current_Address>" e "<Permanent_Address>" preenchidos corretamente
 
     Exemplos:
-      | Full_Name    | Email                | Current_Address | Permanent_Address |
-      | Mariah Carey | mariah@epic.com      | NYC, US         | TX, US            |
-      | Beyoncé      | beyonce@parkwood.com | TX, US          | NYC, US           |
+      | Full_Name      | Email                | Current_Address | Permanent_Address |
+      | "Mariah Carey" | mariah@epic.com      | NYC, US         | TX, US            |
+      | "Beyoncé"      | beyonce@parkwood.com | TX, US          | NYC, US           |
 
   @web @CheckBox
   Cenario: Selecionar a opcao "Private"
@@ -55,4 +55,22 @@ Funcionalidade: Elementos do site ToolsQA
   Cenario: Excluir dados em uma Web Table
     Dado que navego ate pagina de "Web Tables"
     Quando clico no botao com o simbolo de um lixeira na linha de First Name "Cierra" e Last Name "Vega"
-    Entao a linha de First Name Cierraa da Web Table não está mais visivel
+    Entao a linha de First Name "Cierra" da Web Table não está mais visivel
+
+  @web @Buttons @DoubleClick
+  Cenario: Realizar dublo click no botao
+    Dado que navego ate pagina de "Buttons"
+    Quando clico duas vezes seguidas em "Double Click Me"
+    Entao visualizo a mensagem "You have done a double click"
+
+  @web @Buttons @RightClick
+  Cenario: Realizar click com botao direito
+    Dado que navego ate pagina de "Buttons"
+    Quando clico com o botao direito do mouse em "Right Click Me"
+    Entao visualizo a mensagem "You have done a right click"
+
+  @web @Buttons @SimpleClick
+  Cenario: Realizar click simples no botao
+    Dado que navego ate pagina de "Buttons"
+    Quando clico no botao com texto "Click Me"
+    Entao visualizo a mensagem "You have done a dynamic click"

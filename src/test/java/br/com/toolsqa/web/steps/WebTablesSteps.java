@@ -54,18 +54,28 @@ public class WebTablesSteps {
 
     @Entao("eh listado os dados inseridos na Web Table")
     public void ehListadoOsDadosInseridosNaWebTable() {
-        validarTexto(new String[]{"Iuri", "Ramos", "iuri@teste.com", "28", "1500", "QA"});
+        assertTrue(this.webTablesFuncionalidade.verificaSeEncontraLinhaComOsDados(
+                "Iuri", "Ramos", "iuri@teste.com",
+                "28", "1500", "QA"
+        ));
     }
 
     @Entao("eh atualizado os dados da linha da Web Table")
     public void ehAtualizadoOsDadosDaLinhaDaWebTable() {
-        validarTexto(new String[]{"Iuri", "Ramos", "iuri@teste.com", "28", "1500", "QA"});
+        assertTrue(this.webTablesFuncionalidade.verificaSeEncontraLinhaComOsDados(
+                "Iuri", "Ramos", "iuri@teste.com",
+                "28", "1500", "QA"
+        ));
     }
 
-    private void validarTexto(String[] textos) {
-        for (String texto : textos) {
-            assertEquals(texto, this.webTablesFuncionalidade.textoDosCampos(texto));
-        }
+    @Entao("a linha de First Name {string} da Web Table não está mais visivel")
+    public void aLinhaDeFirstNameDaWebTableNaoEstaMaisVisivel(String arg0) {
+        boolean teste = this.webTablesFuncionalidade.verificaSeEncontraLinhaComOsDados(
+                "Cierra", "Vega", "cierra@example.com",
+                "39", "10000", "Insurance"
+        );
+        System.out.println(teste);
+        assertFalse(teste);
     }
 }
 
