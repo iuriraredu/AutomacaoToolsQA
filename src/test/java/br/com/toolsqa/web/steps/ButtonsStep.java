@@ -1,7 +1,6 @@
 package br.com.toolsqa.web.steps;
 
 import br.com.toolsqa.web.funcionalidades.ButtonsFuncionalidade;
-import io.cucumber.java.Scenario;
 import io.cucumber.java.pt.Entao;
 import io.cucumber.java.pt.Quando;
 

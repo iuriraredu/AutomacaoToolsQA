@@ -8,23 +8,24 @@ import io.cucumber.java.Scenario;
 
 public class Hooks extends BaseTest {
 
-    private int cont;
+//    private int cont;
 
     @Before(value = "@web")
     public void setUp() {
         System.out.println("Abrindo o Navegador");
         initializeWebApplication(Web.CHROME, "https://demoqa.com/");
-        cont = 0;
+//        cont = 0;
     }
 
-    @AfterStep(value = "@web")
-    public void reportScreenShot(Scenario scenario){
-        cont++;
-        screenShotReport(scenario.getName() + "_Step" + cont);
-    }
+//    @AfterStep(value = "@web")
+//    public void reportScreenShot(Scenario scenario){
+//        cont++;
+//        screenShotReport(scenario.getName() + "_Step" + cont);
+//    }
 
     @After(value = "@web")
-    public void tearDown() {
+    public void tearDown(Scenario scenario) {
+        screenShotReport(scenario.getName());
         System.out.println("Fechando o Navegador");
         closeWeb();
     }

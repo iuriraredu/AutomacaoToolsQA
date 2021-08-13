@@ -17,7 +17,7 @@ public abstract class BaseTest {
     protected static WebDriverWait wait;
 
     protected void initializeWebApplication(WebApplication webApplication, String url) {
-        if (webDriver != null) webDriver.quit();
+
 
         webDriver = webApplication.getWebDriver();
         webDriver.manage().window().maximize();
@@ -27,7 +27,10 @@ public abstract class BaseTest {
     }
 
     protected static void closeWeb() {
-        webDriver.close();
+        //webDriver.close();
+        if (webDriver != null) {
+            webDriver.quit();
+        }
     }
 
     public static void screenShotReport(String nomeMetodo){

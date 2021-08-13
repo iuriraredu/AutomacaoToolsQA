@@ -10,21 +10,23 @@ public class ButtonsFuncionalidade extends BaseTest {
 
     private ButtonsPage buttonsPage;
     private SeleniumRobot seleniumRobot;
+    private Actions action;
 
     public ButtonsFuncionalidade() {
         this.buttonsPage = new ButtonsPage(webDriver);
         this.seleniumRobot = new SeleniumRobot();
+        this.action = new Actions(webDriver);
     }
 
     public void clicaDuasVezesNoBotao(String textoDoBotao) {
-        Actions action = new Actions(webDriver);
         WebElement botao = this.buttonsPage.getBotaoPorText(textoDoBotao);
+        seleniumRobot.esperarElementoEstarVisivel(botao);
         action.doubleClick(botao).perform();
     }
 
     public void clicaComBotaoDireito(String textoDoBotao) {
-        Actions action = new Actions(webDriver);
         WebElement botao = this.buttonsPage.getBotaoPorText(textoDoBotao);
+        seleniumRobot.esperarElementoEstarVisivel(botao);
         action.contextClick(botao).perform();
     }
 

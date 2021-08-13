@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 246000000,
+              "duration": 197000000,
               "status": "passed"
             },
             "line": 15,
@@ -25,27 +25,965 @@
               ],
               "location": "br.com.toolsqa.web.steps.HomeSteps.queClicoNoCard(java.lang.String)"
             },
-            "after": [
-              {
-                "result": {
-                  "duration": 384000000,
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "br.com.toolsqa.settings.Hooks.reportScreenShot(io.cucumber.java.Scenario)"
-                }
-              }
-            ],
             "keyword": "Dado "
           }
         ]
       },
       {
-        "start_timestamp": "2021-08-06T18:39:09.102Z",
+        "start_timestamp": "2021-08-12T17:14:26.516Z",
         "before": [
           {
             "result": {
-              "duration": 36920000000,
+              "duration": 10852000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "br.com.toolsqa.settings.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "Realizar preenchimento de TextBox",
+        "description": "",
+        "id": "elementos-do-site-toolsqa;realizar-preenchimento-de-textbox;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 874000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "br.com.toolsqa.settings.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 144000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "que navego ate pagina de \"TextBox\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"TextBox\"",
+                  "offset": 25
+                }
+              ],
+              "location": "br.com.toolsqa.web.steps.ElementSteps.queNavegoAtePaginaDe(java.lang.String)"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 432000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "realizo preenchimento dos campos \"Mariah Carey\", \"mariah@epic.com\", \"NYC, US\" e \"TX, US\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Mariah Carey\"",
+                  "offset": 33
+                },
+                {
+                  "val": "\"mariah@epic.com\"",
+                  "offset": 49
+                },
+                {
+                  "val": "\"NYC, US\"",
+                  "offset": 68
+                },
+                {
+                  "val": "\"TX, US\"",
+                  "offset": 80
+                }
+              ],
+              "location": "br.com.toolsqa.web.steps.TextBoxSteps.realizoPreenchimentoDosCamposE(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 85000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "clico no botao \"Submit\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Submit\"",
+                  "offset": 15
+                }
+              ],
+              "location": "br.com.toolsqa.web.steps.TextBoxSteps.clicoNoBotao(java.lang.String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 123000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "eh apresentado os campos \"Mariah Carey\", \"mariah@epic.com\", \"NYC, US\" e \"TX, US\" preenchidos corretamente",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Mariah Carey\"",
+                  "offset": 25
+                },
+                {
+                  "val": "\"mariah@epic.com\"",
+                  "offset": 41
+                },
+                {
+                  "val": "\"NYC, US\"",
+                  "offset": 60
+                },
+                {
+                  "val": "\"TX, US\"",
+                  "offset": 72
+                }
+              ],
+              "location": "br.com.toolsqa.web.steps.TextBoxSteps.ehApresentadoOsCamposEPreenchidos(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Elements"
+          },
+          {
+            "name": "@web"
+          },
+          {
+            "name": "@TextBox"
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "Acessar Página de Elements",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 190000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "que clico no card \"Elements\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Elements\"",
+                  "offset": 18
+                }
+              ],
+              "location": "br.com.toolsqa.web.steps.HomeSteps.queClicoNoCard(java.lang.String)"
+            },
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-12T17:14:39.331Z",
+        "before": [
+          {
+            "result": {
+              "duration": 9844000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "br.com.toolsqa.settings.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 27,
+        "name": "Realizar preenchimento de TextBox",
+        "description": "",
+        "id": "elementos-do-site-toolsqa;realizar-preenchimento-de-textbox;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 907000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "br.com.toolsqa.settings.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 130000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "que navego ate pagina de \"TextBox\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"TextBox\"",
+                  "offset": 25
+                }
+              ],
+              "location": "br.com.toolsqa.web.steps.ElementSteps.queNavegoAtePaginaDe(java.lang.String)"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 441000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "realizo preenchimento dos campos \"Beyoncé\", \"beyonce@parkwood.com\", \"TX, US\" e \"NYC, US\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Beyoncé\"",
+                  "offset": 33
+                },
+                {
+                  "val": "\"beyonce@parkwood.com\"",
+                  "offset": 44
+                },
+                {
+                  "val": "\"TX, US\"",
+                  "offset": 68
+                },
+                {
+                  "val": "\"NYC, US\"",
+                  "offset": 79
+                }
+              ],
+              "location": "br.com.toolsqa.web.steps.TextBoxSteps.realizoPreenchimentoDosCamposE(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 81000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "clico no botao \"Submit\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Submit\"",
+                  "offset": 15
+                }
+              ],
+              "location": "br.com.toolsqa.web.steps.TextBoxSteps.clicoNoBotao(java.lang.String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 129000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "eh apresentado os campos \"Beyoncé\", \"beyonce@parkwood.com\", \"TX, US\" e \"NYC, US\" preenchidos corretamente",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Beyoncé\"",
+                  "offset": 25
+                },
+                {
+                  "val": "\"beyonce@parkwood.com\"",
+                  "offset": 36
+                },
+                {
+                  "val": "\"TX, US\"",
+                  "offset": 60
+                },
+                {
+                  "val": "\"NYC, US\"",
+                  "offset": 71
+                }
+              ],
+              "location": "br.com.toolsqa.web.steps.TextBoxSteps.ehApresentadoOsCamposEPreenchidos(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Elements"
+          },
+          {
+            "name": "@web"
+          },
+          {
+            "name": "@TextBox"
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "Acessar Página de Elements",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 241000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "que clico no card \"Elements\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Elements\"",
+                  "offset": 18
+                }
+              ],
+              "location": "br.com.toolsqa.web.steps.HomeSteps.queClicoNoCard(java.lang.String)"
+            },
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-12T17:14:51.070Z",
+        "before": [
+          {
+            "result": {
+              "duration": 12729000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "br.com.toolsqa.settings.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 30,
+        "name": "Selecionar a opcao \"Private\"",
+        "description": "",
+        "id": "elementos-do-site-toolsqa;selecionar-a-opcao-\"private\"",
+        "after": [
+          {
+            "result": {
+              "duration": 1336000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "br.com.toolsqa.settings.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 124000000,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "que navego ate pagina de \"CheckBox\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"CheckBox\"",
+                  "offset": 25
+                }
+              ],
+              "location": "br.com.toolsqa.web.steps.ElementSteps.queNavegoAtePaginaDe(java.lang.String)"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 181000000,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "clico na seta ao lado de \"Home\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Home\"",
+                  "offset": 25
+                }
+              ],
+              "location": "br.com.toolsqa.web.steps.CheckBoxSteps.clicoNaSetaAoLadoDe(java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 152000000,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "clico na seta ao lado de \"Documents\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Documents\"",
+                  "offset": 25
+                }
+              ],
+              "location": "br.com.toolsqa.web.steps.CheckBoxSteps.clicoNaSetaAoLadoDe(java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 113000000,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "clico na seta ao lado de \"Office\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Office\"",
+                  "offset": 25
+                }
+              ],
+              "location": "br.com.toolsqa.web.steps.CheckBoxSteps.clicoNaSetaAoLadoDe(java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 116000000,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "clico em \"Private\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Private\"",
+                  "offset": 9
+                }
+              ],
+              "location": "br.com.toolsqa.web.steps.CheckBoxSteps.clicoEm(java.lang.String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 53000000,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "é apresentado a mensagem \"You have selected :private\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"You have selected :private\"",
+                  "offset": 25
+                }
+              ],
+              "location": "br.com.toolsqa.web.steps.CheckBoxSteps.éApresentadoAMensagem(java.lang.String)"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Elements"
+          },
+          {
+            "name": "@web"
+          },
+          {
+            "name": "@CheckBox"
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "Acessar Página de Elements",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 204000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "que clico no card \"Elements\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Elements\"",
+                  "offset": 18
+                }
+              ],
+              "location": "br.com.toolsqa.web.steps.HomeSteps.queClicoNoCard(java.lang.String)"
+            },
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-12T17:15:06.130Z",
+        "before": [
+          {
+            "result": {
+              "duration": 10349000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "br.com.toolsqa.settings.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 39,
+        "name": "Inserir dados em uma Web Table",
+        "description": "",
+        "id": "elementos-do-site-toolsqa;inserir-dados-em-uma-web-table",
+        "after": [
+          {
+            "result": {
+              "duration": 895000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "br.com.toolsqa.settings.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 182000000,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "que navego ate pagina de \"Web Tables\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Web Tables\"",
+                  "offset": 25
+                }
+              ],
+              "location": "br.com.toolsqa.web.steps.ElementSteps.queNavegoAtePaginaDe(java.lang.String)"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 164000000,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "clico no botao de \"Add\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Add\"",
+                  "offset": 18
+                }
+              ],
+              "location": "br.com.toolsqa.web.steps.WebTablesSteps.clicoNoBotaoDe(java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 588000000,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "preencho os dados solicitados",
+            "match": {
+              "location": "br.com.toolsqa.web.steps.WebTablesSteps.preenchoOsDadosSolicitados()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 124000000,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "clico no botao para \"Submit\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Submit\"",
+                  "offset": 20
+                }
+              ],
+              "location": "br.com.toolsqa.web.steps.WebTablesSteps.clicoNoBotaoPara(java.lang.String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 33000000,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "eh listado os dados inseridos na Web Table",
+            "match": {
+              "location": "br.com.toolsqa.web.steps.WebTablesSteps.ehListadoOsDadosInseridosNaWebTable()"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Elements"
+          },
+          {
+            "name": "@web"
+          },
+          {
+            "name": "@WebTables"
+          },
+          {
+            "name": "@Inclusao"
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "Acessar Página de Elements",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 181000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "que clico no card \"Elements\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Elements\"",
+                  "offset": 18
+                }
+              ],
+              "location": "br.com.toolsqa.web.steps.HomeSteps.queClicoNoCard(java.lang.String)"
+            },
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-12T17:15:18.699Z",
+        "before": [
+          {
+            "result": {
+              "duration": 10650000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "br.com.toolsqa.settings.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 47,
+        "name": "Alterar dados em uma Web Table",
+        "description": "",
+        "id": "elementos-do-site-toolsqa;alterar-dados-em-uma-web-table",
+        "after": [
+          {
+            "result": {
+              "duration": 908000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "br.com.toolsqa.settings.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 179000000,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "que navego ate pagina de \"Web Tables\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Web Tables\"",
+                  "offset": 25
+                }
+              ],
+              "location": "br.com.toolsqa.web.steps.ElementSteps.queNavegoAtePaginaDe(java.lang.String)"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 193000000,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "clico no botao com o simbolo de um lapis na linha de First Name \"Cierra\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Cierra\"",
+                  "offset": 64
+                }
+              ],
+              "location": "br.com.toolsqa.web.steps.WebTablesSteps.clicoNoBotaoComOSimboloDeUmLapisNaLinhaDeFirstName(java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 959000000,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "altero os dados solicitados",
+            "match": {
+              "location": "br.com.toolsqa.web.steps.WebTablesSteps.alteroOsDadosSolicitados()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 121000000,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "clico no botao para \"Submit\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Submit\"",
+                  "offset": 20
+                }
+              ],
+              "location": "br.com.toolsqa.web.steps.WebTablesSteps.clicoNoBotaoPara(java.lang.String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 24000000,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "eh atualizado os dados da linha da Web Table",
+            "match": {
+              "location": "br.com.toolsqa.web.steps.WebTablesSteps.ehAtualizadoOsDadosDaLinhaDaWebTable()"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Elements"
+          },
+          {
+            "name": "@web"
+          },
+          {
+            "name": "@WebTables"
+          },
+          {
+            "name": "@Alteracao"
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "Acessar Página de Elements",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 190000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "que clico no card \"Elements\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Elements\"",
+                  "offset": 18
+                }
+              ],
+              "location": "br.com.toolsqa.web.steps.HomeSteps.queClicoNoCard(java.lang.String)"
+            },
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-12T17:15:31.927Z",
+        "before": [
+          {
+            "result": {
+              "duration": 13220000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "br.com.toolsqa.settings.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 55,
+        "name": "Excluir dados em uma Web Table",
+        "description": "",
+        "id": "elementos-do-site-toolsqa;excluir-dados-em-uma-web-table",
+        "after": [
+          {
+            "result": {
+              "duration": 854000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "br.com.toolsqa.settings.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 229000000,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "que navego ate pagina de \"Web Tables\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Web Tables\"",
+                  "offset": 25
+                }
+              ],
+              "location": "br.com.toolsqa.web.steps.ElementSteps.queNavegoAtePaginaDe(java.lang.String)"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 126000000,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "clico no botao com o simbolo de um lixeira na linha de First Name \"Cierra\" e Last Name \"Vega\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Cierra\"",
+                  "offset": 66
+                },
+                {
+                  "val": "\"Vega\"",
+                  "offset": 87
+                }
+              ],
+              "location": "br.com.toolsqa.web.steps.WebTablesSteps.clicoNoBotaoComOSimboloDeUmLixeiraNaLinhaDeFirstName(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 34000000,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "a linha de First Name \"Cierra\" da Web Table não está mais visivel",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Cierra\"",
+                  "offset": 22
+                }
+              ],
+              "location": "br.com.toolsqa.web.steps.WebTablesSteps.aLinhaDeFirstNameDaWebTableNaoEstaMaisVisivel(java.lang.String)"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Elements"
+          },
+          {
+            "name": "@web"
+          },
+          {
+            "name": "@WebTables"
+          },
+          {
+            "name": "@Exclusao"
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "Acessar Página de Elements",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 205000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "que clico no card \"Elements\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Elements\"",
+                  "offset": 18
+                }
+              ],
+              "location": "br.com.toolsqa.web.steps.HomeSteps.queClicoNoCard(java.lang.String)"
+            },
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-12T17:15:46.585Z",
+        "before": [
+          {
+            "result": {
+              "duration": 11465000000,
               "status": "passed"
             },
             "match": {
@@ -60,11 +998,11 @@
         "after": [
           {
             "result": {
-              "duration": 171000000,
+              "duration": 838000000,
               "status": "passed"
             },
             "match": {
-              "location": "br.com.toolsqa.settings.Hooks.tearDown()"
+              "location": "br.com.toolsqa.settings.Hooks.tearDown(io.cucumber.java.Scenario)"
             }
           }
         ],
@@ -73,7 +1011,7 @@
         "steps": [
           {
             "result": {
-              "duration": 189000000,
+              "duration": 173000000,
               "status": "passed"
             },
             "line": 62,
@@ -87,22 +1025,11 @@
               ],
               "location": "br.com.toolsqa.web.steps.ElementSteps.queNavegoAtePaginaDe(java.lang.String)"
             },
-            "after": [
-              {
-                "result": {
-                  "duration": 221000000,
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "br.com.toolsqa.settings.Hooks.reportScreenShot(io.cucumber.java.Scenario)"
-                }
-              }
-            ],
             "keyword": "Dado "
           },
           {
             "result": {
-              "duration": 192000000,
+              "duration": 231000000,
               "status": "passed"
             },
             "line": 63,
@@ -116,24 +1043,12 @@
               ],
               "location": "br.com.toolsqa.web.steps.ButtonsStep.clicoDuasVezesSeguidasEm(java.lang.String)"
             },
-            "after": [
-              {
-                "result": {
-                  "duration": 217000000,
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "br.com.toolsqa.settings.Hooks.reportScreenShot(io.cucumber.java.Scenario)"
-                }
-              }
-            ],
             "keyword": "Quando "
           },
           {
             "result": {
-              "error_message": "io.cucumber.core.exception.CucumberException: Step [visualizo a mensagem {string}] is defined with 2 parameters at \u0027br.com.toolsqa.web.steps.ButtonsStep.visualizoAMensagem(java.lang.String,io.cucumber.java.Scenario)\u0027.\nHowever, the gherkin step has 1 arguments:\n * \"You have done a double click\"\nStep text: visualizo a mensagem \"You have done a double click\"\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.arityMismatch(PickleStepDefinitionMatch.java:83)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:42)\r\n\tat io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:64)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:104)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:73)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:200)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:235)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)\r\n",
-              "duration": 1000000,
-              "status": "failed"
+              "duration": 35000000,
+              "status": "passed"
             },
             "line": 64,
             "name": "visualizo a mensagem \"You have done a double click\"",
@@ -144,19 +1059,8 @@
                   "offset": 21
                 }
               ],
-              "location": "br.com.toolsqa.web.steps.ButtonsStep.visualizoAMensagem(java.lang.String,io.cucumber.java.Scenario)"
+              "location": "br.com.toolsqa.web.steps.ButtonsStep.visualizoAMensagem(java.lang.String)"
             },
-            "after": [
-              {
-                "result": {
-                  "duration": 168000000,
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "br.com.toolsqa.settings.Hooks.reportScreenShot(io.cucumber.java.Scenario)"
-                }
-              }
-            ],
             "keyword": "Entao "
           }
         ],
@@ -184,7 +1088,7 @@
         "steps": [
           {
             "result": {
-              "duration": 203000000,
+              "duration": 210000000,
               "status": "passed"
             },
             "line": 15,
@@ -198,27 +1102,16 @@
               ],
               "location": "br.com.toolsqa.web.steps.HomeSteps.queClicoNoCard(java.lang.String)"
             },
-            "after": [
-              {
-                "result": {
-                  "duration": 202000000,
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "br.com.toolsqa.settings.Hooks.reportScreenShot(io.cucumber.java.Scenario)"
-                }
-              }
-            ],
             "keyword": "Dado "
           }
         ]
       },
       {
-        "start_timestamp": "2021-08-06T18:39:47.932Z",
+        "start_timestamp": "2021-08-12T17:15:59.540Z",
         "before": [
           {
             "result": {
-              "duration": 10705000000,
+              "duration": 10453000000,
               "status": "passed"
             },
             "match": {
@@ -233,11 +1126,11 @@
         "after": [
           {
             "result": {
-              "duration": 4225000000,
+              "duration": 851000000,
               "status": "passed"
             },
             "match": {
-              "location": "br.com.toolsqa.settings.Hooks.tearDown()"
+              "location": "br.com.toolsqa.settings.Hooks.tearDown(io.cucumber.java.Scenario)"
             }
           }
         ],
@@ -246,7 +1139,7 @@
         "steps": [
           {
             "result": {
-              "duration": 180000000,
+              "duration": 124000000,
               "status": "passed"
             },
             "line": 68,
@@ -260,22 +1153,11 @@
               ],
               "location": "br.com.toolsqa.web.steps.ElementSteps.queNavegoAtePaginaDe(java.lang.String)"
             },
-            "after": [
-              {
-                "result": {
-                  "duration": 180000000,
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "br.com.toolsqa.settings.Hooks.reportScreenShot(io.cucumber.java.Scenario)"
-                }
-              }
-            ],
             "keyword": "Dado "
           },
           {
             "result": {
-              "duration": 169000000,
+              "duration": 179000000,
               "status": "passed"
             },
             "line": 69,
@@ -289,23 +1171,12 @@
               ],
               "location": "br.com.toolsqa.web.steps.ButtonsStep.clicoComOBotaoDireitoDoMouseEm(java.lang.String)"
             },
-            "after": [
-              {
-                "result": {
-                  "duration": 219000000,
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "br.com.toolsqa.settings.Hooks.reportScreenShot(io.cucumber.java.Scenario)"
-                }
-              }
-            ],
             "keyword": "Quando "
           },
           {
             "result": {
-              "error_message": "io.cucumber.core.exception.CucumberException: Step [visualizo a mensagem {string}] is defined with 2 parameters at \u0027br.com.toolsqa.web.steps.ButtonsStep.visualizoAMensagem(java.lang.String,io.cucumber.java.Scenario)\u0027.\nHowever, the gherkin step has 1 arguments:\n * \"You have done a right click\"\nStep text: visualizo a mensagem \"You have done a right click\"\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.arityMismatch(PickleStepDefinitionMatch.java:83)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:42)\r\n\tat io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:64)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:104)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:73)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:200)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:235)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)\r\n",
-              "status": "failed"
+              "duration": 30000000,
+              "status": "passed"
             },
             "line": 70,
             "name": "visualizo a mensagem \"You have done a right click\"",
@@ -316,19 +1187,8 @@
                   "offset": 21
                 }
               ],
-              "location": "br.com.toolsqa.web.steps.ButtonsStep.visualizoAMensagem(java.lang.String,io.cucumber.java.Scenario)"
+              "location": "br.com.toolsqa.web.steps.ButtonsStep.visualizoAMensagem(java.lang.String)"
             },
-            "after": [
-              {
-                "result": {
-                  "duration": 165000000,
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "br.com.toolsqa.settings.Hooks.reportScreenShot(io.cucumber.java.Scenario)"
-                }
-              }
-            ],
             "keyword": "Entao "
           }
         ],
@@ -356,7 +1216,7 @@
         "steps": [
           {
             "result": {
-              "duration": 173000000,
+              "duration": 226000000,
               "status": "passed"
             },
             "line": 15,
@@ -370,27 +1230,16 @@
               ],
               "location": "br.com.toolsqa.web.steps.HomeSteps.queClicoNoCard(java.lang.String)"
             },
-            "after": [
-              {
-                "result": {
-                  "duration": 233000000,
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "br.com.toolsqa.settings.Hooks.reportScreenShot(io.cucumber.java.Scenario)"
-                }
-              }
-            ],
             "keyword": "Dado "
           }
         ]
       },
       {
-        "start_timestamp": "2021-08-06T18:40:04.196Z",
+        "start_timestamp": "2021-08-12T17:16:11.403Z",
         "before": [
           {
             "result": {
-              "duration": 9839000000,
+              "duration": 11611000000,
               "status": "passed"
             },
             "match": {
@@ -405,11 +1254,11 @@
         "after": [
           {
             "result": {
-              "duration": 180000000,
+              "duration": 885000000,
               "status": "passed"
             },
             "match": {
-              "location": "br.com.toolsqa.settings.Hooks.tearDown()"
+              "location": "br.com.toolsqa.settings.Hooks.tearDown(io.cucumber.java.Scenario)"
             }
           }
         ],
@@ -418,7 +1267,7 @@
         "steps": [
           {
             "result": {
-              "duration": 193000000,
+              "duration": 160000000,
               "status": "passed"
             },
             "line": 74,
@@ -432,22 +1281,11 @@
               ],
               "location": "br.com.toolsqa.web.steps.ElementSteps.queNavegoAtePaginaDe(java.lang.String)"
             },
-            "after": [
-              {
-                "result": {
-                  "duration": 160000000,
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "br.com.toolsqa.settings.Hooks.reportScreenShot(io.cucumber.java.Scenario)"
-                }
-              }
-            ],
             "keyword": "Dado "
           },
           {
             "result": {
-              "duration": 71000000,
+              "duration": 65000000,
               "status": "passed"
             },
             "line": 75,
@@ -461,23 +1299,12 @@
               ],
               "location": "br.com.toolsqa.web.steps.ButtonsStep.clicoNoBotaoComTexto(java.lang.String)"
             },
-            "after": [
-              {
-                "result": {
-                  "duration": 158000000,
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "br.com.toolsqa.settings.Hooks.reportScreenShot(io.cucumber.java.Scenario)"
-                }
-              }
-            ],
             "keyword": "Quando "
           },
           {
             "result": {
-              "error_message": "io.cucumber.core.exception.CucumberException: Step [visualizo a mensagem {string}] is defined with 2 parameters at \u0027br.com.toolsqa.web.steps.ButtonsStep.visualizoAMensagem(java.lang.String,io.cucumber.java.Scenario)\u0027.\nHowever, the gherkin step has 1 arguments:\n * \"You have done a dynamic click\"\nStep text: visualizo a mensagem \"You have done a dynamic click\"\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.arityMismatch(PickleStepDefinitionMatch.java:83)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:42)\r\n\tat io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:64)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:104)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:73)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:200)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:235)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)\r\n",
-              "status": "failed"
+              "duration": 31000000,
+              "status": "passed"
             },
             "line": 76,
             "name": "visualizo a mensagem \"You have done a dynamic click\"",
@@ -488,19 +1315,8 @@
                   "offset": 21
                 }
               ],
-              "location": "br.com.toolsqa.web.steps.ButtonsStep.visualizoAMensagem(java.lang.String,io.cucumber.java.Scenario)"
+              "location": "br.com.toolsqa.web.steps.ButtonsStep.visualizoAMensagem(java.lang.String)"
             },
-            "after": [
-              {
-                "result": {
-                  "duration": 165000000,
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "br.com.toolsqa.settings.Hooks.reportScreenShot(io.cucumber.java.Scenario)"
-                }
-              }
-            ],
             "keyword": "Entao "
           }
         ],

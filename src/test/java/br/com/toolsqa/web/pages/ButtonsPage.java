@@ -24,9 +24,19 @@ public class ButtonsPage {
     @FindBy (id = "dynamicClickMessage")
     private WebElement mensagemClickSimples;
 
+    @FindBy (id = "rightClickBtn")
+    private WebElement botaoClickDireito;
+
+    @FindBy (id = "doubleClickBtn")
+    private WebElement botaoDuploClick;
+
     public WebElement getBotaoPorText(String textoDoBotao){
-        String xPath = "//button[text()='" + textoDoBotao + "']";
-        return this.seleniumRobot.mapearElemento(xPath);
+        return
+                (textoDoBotao).contains("Double Click Me") ? botaoDuploClick :
+                (textoDoBotao).contains("Right Click Me") ? botaoClickDireito :
+                this.seleniumRobot.mapearElemento(
+                        "//button[text()='" + textoDoBotao + "']"
+                );
     }
 
     public WebElement getMensagemDoubleClick() {

@@ -24,6 +24,11 @@ public class SeleniumRobot extends BaseTest {
         wait.until(ExpectedConditions.visibilityOf(element));
     }
 
+    /**
+     * Busca elemento pelo parametro informado
+     * @param xPath que deve ser informado quando for realizar a busca
+     * @return WebElement encontrado
+     */
     public WebElement mapearElemento(String xPath) {
         return webDriver.findElement(By.xpath(xPath));
     }
