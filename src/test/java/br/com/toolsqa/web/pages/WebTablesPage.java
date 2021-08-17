@@ -78,15 +78,15 @@ public class WebTablesPage {
     }
 
     public WebElement getBotaoExcluirPelo(String primeiroNome, String ultimoNome){
-        String xPath = "//div[text()='"+ primeiroNome +
-                "']/following-sibling::div[text()='"+ ultimoNome +
+        String xPath = "//div[text()='" + primeiroNome +
+                "']/following-sibling::div[text()='" + ultimoNome +
                 "']/following-sibling::div/div/span[@title='Delete']";
         return this.seleniumRobot.mapearElemento(xPath);
     }
 
     public WebElement getCamposTabelaPelo(String texto){
         return this.seleniumRobot.mapearElemento(
-                "//div[text()='"+ texto + "']"
+                "//div[text()='" + texto + "']"
         );
     }
 }

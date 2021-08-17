@@ -17,8 +17,6 @@ public abstract class BaseTest {
     protected static WebDriverWait wait;
 
     protected void initializeWebApplication(WebApplication webApplication, String url) {
-
-
         webDriver = webApplication.getWebDriver();
         webDriver.manage().window().maximize();
         webDriver.get(url);
@@ -27,20 +25,23 @@ public abstract class BaseTest {
     }
 
     protected static void closeWeb() {
-        //webDriver.close();
         if (webDriver != null) {
             webDriver.quit();
         }
     }
 
-    public static void screenShotReport(String nomeMetodo){
+    protected static void screenShotReport(String nomeMetodo){
         File screenshot = ((TakesScreenshot)webDriver).getScreenshotAs(OutputType.FILE);
         try {
-            FileUtils.copyFile(screenshot, new File("test-output/Screenshot/" +
-                    new SimpleDateFormat("yyyy-MM-dd-hhmmss").format(new Timestamp(System.currentTimeMillis())) +
-                    "_" + nomeMetodo + ".png"));
+            FileUtils.copyFile(screenshot,
+                    new File("test-output/Screenshot/" +
+                        new SimpleDateFormat("yyyy-MM-dd-hhmmss").format(
+                                new Timestamp(System.currentTimeMillis())
+                        ) + "_" + nomeMetodo + ".png"
+                    )
+            );
         } catch (Exception e){
-            System.out.println("Houveram problemas ao copiar o arquivo para pasta!\n"+e.getMessage());
+            System.out.println("Houveram problemas ao copiar o arquivo para pasta!\n" + e.getMessage());
         }
     }
 }

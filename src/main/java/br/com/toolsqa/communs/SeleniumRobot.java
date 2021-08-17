@@ -42,9 +42,3 @@ public class SeleniumRobot extends BaseTest {
         return webDriver.findElements(By.xpath(xPath));
     }
 }
-/* return (webDriver.findElements(By.xpath(xPath)).size() > 0);
- *     /**
- *      * Verificar se um elemento está presente pelo xpath
- *      * @param xPath do elemento a ser localizado
- *      * @return "true" se pelo menos um elemento for encontrado e "false" se ele não existir.
- *      */

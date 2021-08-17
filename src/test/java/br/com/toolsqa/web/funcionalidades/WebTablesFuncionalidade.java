@@ -17,11 +17,12 @@ public class WebTablesFuncionalidade extends BaseTest {
     }
 
     public void clicarNoBotaoAdd(){
+        this.seleniumRobot.scroll();
         this.seleniumRobot.esperarElementoEstarClicavelEClicar(
                 this.webTablesPage.getBotaoAdd());
     }
 
-    public void preencheOsCampos(String primeiroNome, String ultimoNome,String email,
+    public void preencheOsCampos(String primeiroNome, String ultimoNome, String email,
                                  int idade, String salario, String departamento){
         this.seleniumRobot.esperarElementoEstarVisivel(this.webTablesPage.getBotaoSubmit());
         this.webTablesPage.getInputPrimeiroNome().sendKeys(primeiroNome);
@@ -32,7 +33,7 @@ public class WebTablesFuncionalidade extends BaseTest {
         this.webTablesPage.getInputDepartamento().sendKeys(departamento);
     }
 
-    public void alteraDados(String primeiroNome, String ultimoNome,String email,
+    public void alteraDados(String primeiroNome, String ultimoNome, String email,
                             int idade, String salario, String departamento){
         this.seleniumRobot.esperarElementoEstarVisivel(this.webTablesPage.getBotaoSubmit());
         this.webTablesPage.getInputPrimeiroNome().clear();
@@ -62,6 +63,7 @@ public class WebTablesFuncionalidade extends BaseTest {
     }
 
     public void clicarNoBotaoExcluir(String primeiroNome, String ultimoNome){
+        this.seleniumRobot.scroll();
         this.seleniumRobot.esperarElementoEstarClicavelEClicar(
                 this.webTablesPage.getBotaoExcluirPelo(primeiroNome, ultimoNome)
         );
@@ -71,15 +73,16 @@ public class WebTablesFuncionalidade extends BaseTest {
         return this.webTablesPage.getCamposTabelaPelo(texto).getText();
     }
 
-    public boolean verificaSeEncontraLinhaComOsDados(String primeiroNome, String ultimoNome,String email,
+    public boolean verificaSeEncontraLinhaComOsDados(String primeiroNome, String ultimoNome, String email,
                                         String idade, String salario, String departamento){
-        String xPath = ("//div[" +
+        String xPath = ( "//div[" +
                 "div[text()='" + primeiroNome + "' and following-sibling:: " +
                 "div[text()='" + ultimoNome + "' and following-sibling:: " +
                 "div[text()='" + idade + "' and following-sibling:: " +
                 "div[text()='" + email + "' and following-sibling:: " +
                 "div[text()='" + salario + "' and following-sibling:: " +
-                "div[text()='" + departamento + "']]]]]]]");
+                "div[text()='" + departamento + "']]]]]]]"
+        );
         List<WebElement> webElements = this.seleniumRobot.buscaVariosElementosPor(xPath);
         return webElements.size() > 0;
     }

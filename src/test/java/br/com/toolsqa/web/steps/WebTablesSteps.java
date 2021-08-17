@@ -74,7 +74,7 @@ public class WebTablesSteps {
                 "Cierra", "Vega", "cierra@example.com",
                 "39", "10000", "Insurance"
         );
-        System.out.println(teste);
+        //System.out.println(teste);
         assertFalse(teste);
     }
 }

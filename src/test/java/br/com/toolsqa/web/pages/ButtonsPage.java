@@ -31,8 +31,7 @@ public class ButtonsPage {
     private WebElement botaoDuploClick;
 
     public WebElement getBotaoPorText(String textoDoBotao){
-        return
-                (textoDoBotao).contains("Double Click Me") ? botaoDuploClick :
+        return  (textoDoBotao).contains("Double Click Me") ? botaoDuploClick :
                 (textoDoBotao).contains("Right Click Me") ? botaoClickDireito :
                 this.seleniumRobot.mapearElemento(
                         "//button[text()='" + textoDoBotao + "']"
