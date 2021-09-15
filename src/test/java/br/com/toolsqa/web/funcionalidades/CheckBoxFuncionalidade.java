@@ -14,25 +14,30 @@ public class CheckBoxFuncionalidade extends BaseTest {
     }
 
     public void clicaNaSeta(String nomeSeta) {
-        if (nomeSeta.equals("Home")) {
-            this.seleniumRobot.esperarElementoEstarClicavelEClicar(
-                    this.checkBoxPage.getSetaHome()
-            );
-        } else if (nomeSeta.equals("Documents")) {
+        switch (nomeSeta) {
+            case "Home":
+                this.seleniumRobot.esperarElementoEstarClicavelEClicar(
+                        this.checkBoxPage.getSetaHome()
+                );
+                break;
+            case "Documents":
                 this.seleniumRobot.esperarElementoEstarClicavelEClicar(
                         this.checkBoxPage.getSetaDocuments()
                 );
-        } else if (nomeSeta.equals("Office")) {
+                break;
+            case "Office":
                 this.seleniumRobot.esperarElementoEstarClicavelEClicar(
                         this.checkBoxPage.getSetaOffice()
                 );
+                break;
         }
 
     }
 
     public void clicoEmPrivate() {
         this.seleniumRobot.esperarElementoEstarClicavelEClicar(
-                this.checkBoxPage.getOpcaoPrivate());
+                this.checkBoxPage.getOpcaoPrivate()
+        );
     }
 
     public String pegaMensagem() {

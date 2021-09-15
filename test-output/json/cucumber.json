@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 215000000,
+              "duration": 347000000,
               "status": "passed"
             },
             "line": 15,
@@ -30,522 +30,11 @@
         ]
       },
       {
-        "start_timestamp": "2021-08-17T13:55:27.272Z",
+        "start_timestamp": "2021-09-15T13:04:24.865Z",
         "before": [
           {
             "result": {
-              "duration": 12211000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "br.com.toolsqa.settings.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 26,
-        "name": "Realizar preenchimento de TextBox",
-        "description": "",
-        "id": "elementos-do-site-toolsqa;realizar-preenchimento-de-textbox;;2",
-        "after": [
-          {
-            "result": {
-              "duration": 904000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "br.com.toolsqa.settings.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Esquema do Cenario",
-        "steps": [
-          {
-            "result": {
-              "error_message": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element \u003cspan class\u003d\"text\"\u003e...\u003c/span\u003e is not clickable at point (113, 223). Other element would receive the click: \u003cdiv class\u003d\"row\"\u003e...\u003c/div\u003e\n  (Session info: chrome\u003d92.0.4515.131)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-PGLEHBO4\u0027, ip: \u0027192.168.15.13\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_281\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\\Users\\IURIRA~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:65376}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 697fd694300843c29db80f23bb70b85a\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\r\n\tat com.sun.proxy.$Proxy18.click(Unknown Source)\r\n\tat br.com.toolsqa.communs.SeleniumRobot.esperarElementoEstarClicavelEClicar(SeleniumRobot.java:20)\r\n\tat br.com.toolsqa.web.funcionalidades.ElementFuncionalidade.clicarEmOpcaoTextBox(ElementFuncionalidade.java:25)\r\n\tat br.com.toolsqa.web.funcionalidades.ElementFuncionalidade.clicoNaOpcao(ElementFuncionalidade.java:49)\r\n\tat br.com.toolsqa.web.steps.ElementSteps.queNavegoAtePaginaDe(ElementSteps.java:17)\r\n\tat ✽.que navego ate pagina de \"TextBox\"(file:///C:/Users/Iuri%20Ramos%20Reducino/eclipse-workspace/AutomacaoToolsQA/src/test/resources/TestElements.feature:19)\r\n",
-              "duration": 1148000000,
-              "status": "failed"
-            },
-            "line": 19,
-            "name": "que navego ate pagina de \"TextBox\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"TextBox\"",
-                  "offset": 25
-                }
-              ],
-              "location": "br.com.toolsqa.web.steps.ElementSteps.queNavegoAtePaginaDe(java.lang.String)"
-            },
-            "keyword": "Dado "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 20,
-            "name": "realizo preenchimento dos campos \"Mariah Carey\", \"mariah@epic.com\", \"NYC, US\" e \"TX, US\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Mariah Carey\"",
-                  "offset": 33
-                },
-                {
-                  "val": "\"mariah@epic.com\"",
-                  "offset": 49
-                },
-                {
-                  "val": "\"NYC, US\"",
-                  "offset": 68
-                },
-                {
-                  "val": "\"TX, US\"",
-                  "offset": 80
-                }
-              ],
-              "location": "br.com.toolsqa.web.steps.TextBoxSteps.realizoPreenchimentoDosCamposE(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 21,
-            "name": "clico no botao \"Submit\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Submit\"",
-                  "offset": 15
-                }
-              ],
-              "location": "br.com.toolsqa.web.steps.TextBoxSteps.clicoNoBotao(java.lang.String)"
-            },
-            "keyword": "Quando "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 22,
-            "name": "eh apresentado os campos \"Mariah Carey\", \"mariah@epic.com\", \"NYC, US\" e \"TX, US\" preenchidos corretamente",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Mariah Carey\"",
-                  "offset": 25
-                },
-                {
-                  "val": "\"mariah@epic.com\"",
-                  "offset": 41
-                },
-                {
-                  "val": "\"NYC, US\"",
-                  "offset": 60
-                },
-                {
-                  "val": "\"TX, US\"",
-                  "offset": 72
-                }
-              ],
-              "location": "br.com.toolsqa.web.steps.TextBoxSteps.ehApresentadoOsCamposEPreenchidos(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
-            },
-            "keyword": "Entao "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Elements"
-          },
-          {
-            "name": "@web"
-          },
-          {
-            "name": "@TextBox"
-          }
-        ]
-      },
-      {
-        "line": 14,
-        "name": "Acessar Página de Elements",
-        "description": "",
-        "type": "background",
-        "keyword": "Contexto",
-        "steps": [
-          {
-            "result": {
-              "duration": 206000000,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "que clico no card \"Elements\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Elements\"",
-                  "offset": 18
-                }
-              ],
-              "location": "br.com.toolsqa.web.steps.HomeSteps.queClicoNoCard(java.lang.String)"
-            },
-            "keyword": "Dado "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-08-17T13:55:41.887Z",
-        "before": [
-          {
-            "result": {
-              "duration": 12658000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "br.com.toolsqa.settings.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 27,
-        "name": "Realizar preenchimento de TextBox",
-        "description": "",
-        "id": "elementos-do-site-toolsqa;realizar-preenchimento-de-textbox;;3",
-        "after": [
-          {
-            "result": {
-              "duration": 876000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "br.com.toolsqa.settings.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Esquema do Cenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 179000000,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "que navego ate pagina de \"TextBox\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"TextBox\"",
-                  "offset": 25
-                }
-              ],
-              "location": "br.com.toolsqa.web.steps.ElementSteps.queNavegoAtePaginaDe(java.lang.String)"
-            },
-            "keyword": "Dado "
-          },
-          {
-            "result": {
-              "duration": 409000000,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "realizo preenchimento dos campos \"Beyoncé\", \"beyonce@parkwood.com\", \"TX, US\" e \"NYC, US\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Beyoncé\"",
-                  "offset": 33
-                },
-                {
-                  "val": "\"beyonce@parkwood.com\"",
-                  "offset": 44
-                },
-                {
-                  "val": "\"TX, US\"",
-                  "offset": 68
-                },
-                {
-                  "val": "\"NYC, US\"",
-                  "offset": 79
-                }
-              ],
-              "location": "br.com.toolsqa.web.steps.TextBoxSteps.realizoPreenchimentoDosCamposE(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 77000000,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "clico no botao \"Submit\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Submit\"",
-                  "offset": 15
-                }
-              ],
-              "location": "br.com.toolsqa.web.steps.TextBoxSteps.clicoNoBotao(java.lang.String)"
-            },
-            "keyword": "Quando "
-          },
-          {
-            "result": {
-              "duration": 136000000,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "eh apresentado os campos \"Beyoncé\", \"beyonce@parkwood.com\", \"TX, US\" e \"NYC, US\" preenchidos corretamente",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Beyoncé\"",
-                  "offset": 25
-                },
-                {
-                  "val": "\"beyonce@parkwood.com\"",
-                  "offset": 36
-                },
-                {
-                  "val": "\"TX, US\"",
-                  "offset": 60
-                },
-                {
-                  "val": "\"NYC, US\"",
-                  "offset": 71
-                }
-              ],
-              "location": "br.com.toolsqa.web.steps.TextBoxSteps.ehApresentadoOsCamposEPreenchidos(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
-            },
-            "keyword": "Entao "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Elements"
-          },
-          {
-            "name": "@web"
-          },
-          {
-            "name": "@TextBox"
-          }
-        ]
-      },
-      {
-        "line": 14,
-        "name": "Acessar Página de Elements",
-        "description": "",
-        "type": "background",
-        "keyword": "Contexto",
-        "steps": [
-          {
-            "result": {
-              "duration": 231000000,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "que clico no card \"Elements\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Elements\"",
-                  "offset": 18
-                }
-              ],
-              "location": "br.com.toolsqa.web.steps.HomeSteps.queClicoNoCard(java.lang.String)"
-            },
-            "keyword": "Dado "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-08-17T13:55:56.441Z",
-        "before": [
-          {
-            "result": {
-              "duration": 48771000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "br.com.toolsqa.settings.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 30,
-        "name": "Selecionar a opcao \"Private\"",
-        "description": "",
-        "id": "elementos-do-site-toolsqa;selecionar-a-opcao-\"private\"",
-        "after": [
-          {
-            "result": {
-              "duration": 862000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "br.com.toolsqa.settings.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Cenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 176000000,
-              "status": "passed"
-            },
-            "line": 31,
-            "name": "que navego ate pagina de \"CheckBox\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"CheckBox\"",
-                  "offset": 25
-                }
-              ],
-              "location": "br.com.toolsqa.web.steps.ElementSteps.queNavegoAtePaginaDe(java.lang.String)"
-            },
-            "keyword": "Dado "
-          },
-          {
-            "result": {
-              "duration": 156000000,
-              "status": "passed"
-            },
-            "line": 32,
-            "name": "clico na seta ao lado de \"Home\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Home\"",
-                  "offset": 25
-                }
-              ],
-              "location": "br.com.toolsqa.web.steps.CheckBoxSteps.clicoNaSetaAoLadoDe(java.lang.String)"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 131000000,
-              "status": "passed"
-            },
-            "line": 33,
-            "name": "clico na seta ao lado de \"Documents\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Documents\"",
-                  "offset": 25
-                }
-              ],
-              "location": "br.com.toolsqa.web.steps.CheckBoxSteps.clicoNaSetaAoLadoDe(java.lang.String)"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 128000000,
-              "status": "passed"
-            },
-            "line": 34,
-            "name": "clico na seta ao lado de \"Office\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Office\"",
-                  "offset": 25
-                }
-              ],
-              "location": "br.com.toolsqa.web.steps.CheckBoxSteps.clicoNaSetaAoLadoDe(java.lang.String)"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 107000000,
-              "status": "passed"
-            },
-            "line": 35,
-            "name": "clico em \"Private\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Private\"",
-                  "offset": 9
-                }
-              ],
-              "location": "br.com.toolsqa.web.steps.CheckBoxSteps.clicoEm(java.lang.String)"
-            },
-            "keyword": "Quando "
-          },
-          {
-            "result": {
-              "duration": 51000000,
-              "status": "passed"
-            },
-            "line": 36,
-            "name": "é apresentado a mensagem \"You have selected :private\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"You have selected :private\"",
-                  "offset": 25
-                }
-              ],
-              "location": "br.com.toolsqa.web.steps.CheckBoxSteps.éApresentadoAMensagem(java.lang.String)"
-            },
-            "keyword": "Entao "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Elements"
-          },
-          {
-            "name": "@web"
-          },
-          {
-            "name": "@CheckBox"
-          }
-        ]
-      },
-      {
-        "line": 14,
-        "name": "Acessar Página de Elements",
-        "description": "",
-        "type": "background",
-        "keyword": "Contexto",
-        "steps": [
-          {
-            "result": {
-              "duration": 196000000,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "que clico no card \"Elements\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Elements\"",
-                  "offset": 18
-                }
-              ],
-              "location": "br.com.toolsqa.web.steps.HomeSteps.queClicoNoCard(java.lang.String)"
-            },
-            "keyword": "Dado "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-08-17T13:56:47.069Z",
-        "before": [
-          {
-            "result": {
-              "duration": 8748000000,
+              "duration": 14793000000,
               "status": "passed"
             },
             "match": {
@@ -560,7 +49,7 @@
         "after": [
           {
             "result": {
-              "duration": 903000000,
+              "duration": 1630000000,
               "status": "passed"
             },
             "match": {
@@ -573,7 +62,7 @@
         "steps": [
           {
             "result": {
-              "duration": 188000000,
+              "duration": 339000000,
               "status": "passed"
             },
             "line": 40,
@@ -591,7 +80,7 @@
           },
           {
             "result": {
-              "duration": 202000000,
+              "duration": 290000000,
               "status": "passed"
             },
             "line": 41,
@@ -609,7 +98,7 @@
           },
           {
             "result": {
-              "duration": 645000000,
+              "duration": 1985000000,
               "status": "passed"
             },
             "line": 42,
@@ -621,7 +110,7 @@
           },
           {
             "result": {
-              "duration": 133000000,
+              "duration": 195000000,
               "status": "passed"
             },
             "line": 43,
@@ -639,7 +128,7 @@
           },
           {
             "result": {
-              "duration": 22000000,
+              "duration": 35000000,
               "status": "passed"
             },
             "line": 44,
@@ -674,7 +163,7 @@
         "steps": [
           {
             "result": {
-              "duration": 207000000,
+              "duration": 281000000,
               "status": "passed"
             },
             "line": 15,
@@ -693,11 +182,11 @@
         ]
       },
       {
-        "start_timestamp": "2021-08-17T13:56:58.116Z",
+        "start_timestamp": "2021-09-15T13:04:44.629Z",
         "before": [
           {
             "result": {
-              "duration": 11647000000,
+              "duration": 15454000000,
               "status": "passed"
             },
             "match": {
@@ -712,7 +201,7 @@
         "after": [
           {
             "result": {
-              "duration": 839000000,
+              "duration": 1556000000,
               "status": "passed"
             },
             "match": {
@@ -725,7 +214,7 @@
         "steps": [
           {
             "result": {
-              "duration": 203000000,
+              "duration": 329000000,
               "status": "passed"
             },
             "line": 48,
@@ -743,7 +232,7 @@
           },
           {
             "result": {
-              "duration": 172000000,
+              "duration": 255000000,
               "status": "passed"
             },
             "line": 49,
@@ -761,7 +250,7 @@
           },
           {
             "result": {
-              "duration": 904000000,
+              "duration": 1218000000,
               "status": "passed"
             },
             "line": 50,
@@ -773,7 +262,7 @@
           },
           {
             "result": {
-              "duration": 123000000,
+              "duration": 195000000,
               "status": "passed"
             },
             "line": 51,
@@ -791,7 +280,7 @@
           },
           {
             "result": {
-              "duration": 21000000,
+              "duration": 32000000,
               "status": "passed"
             },
             "line": 52,
@@ -826,7 +315,7 @@
         "steps": [
           {
             "result": {
-              "duration": 237000000,
+              "duration": 297000000,
               "status": "passed"
             },
             "line": 15,
@@ -845,11 +334,11 @@
         ]
       },
       {
-        "start_timestamp": "2021-08-17T13:57:12.253Z",
+        "start_timestamp": "2021-09-15T13:05:03.975Z",
         "before": [
           {
             "result": {
-              "duration": 9487000000,
+              "duration": 17181000000,
               "status": "passed"
             },
             "match": {
@@ -864,7 +353,7 @@
         "after": [
           {
             "result": {
-              "duration": 873000000,
+              "duration": 1044000000,
               "status": "passed"
             },
             "match": {
@@ -877,7 +366,7 @@
         "steps": [
           {
             "result": {
-              "duration": 248000000,
+              "duration": 235000000,
               "status": "passed"
             },
             "line": 56,
@@ -895,7 +384,7 @@
           },
           {
             "result": {
-              "duration": 135000000,
+              "duration": 238000000,
               "status": "passed"
             },
             "line": 57,
@@ -917,7 +406,7 @@
           },
           {
             "result": {
-              "duration": 19000000,
+              "duration": 24000000,
               "status": "passed"
             },
             "line": 58,
@@ -946,390 +435,6 @@
           },
           {
             "name": "@Exclusao"
-          }
-        ]
-      },
-      {
-        "line": 14,
-        "name": "Acessar Página de Elements",
-        "description": "",
-        "type": "background",
-        "keyword": "Contexto",
-        "steps": [
-          {
-            "result": {
-              "duration": 203000000,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "que clico no card \"Elements\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Elements\"",
-                  "offset": 18
-                }
-              ],
-              "location": "br.com.toolsqa.web.steps.HomeSteps.queClicoNoCard(java.lang.String)"
-            },
-            "keyword": "Dado "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-08-17T13:57:23.260Z",
-        "before": [
-          {
-            "result": {
-              "duration": 12015000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "br.com.toolsqa.settings.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 61,
-        "name": "Realizar dublo click no botao",
-        "description": "",
-        "id": "elementos-do-site-toolsqa;realizar-dublo-click-no-botao",
-        "after": [
-          {
-            "result": {
-              "duration": 844000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "br.com.toolsqa.settings.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Cenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 182000000,
-              "status": "passed"
-            },
-            "line": 62,
-            "name": "que navego ate pagina de \"Buttons\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Buttons\"",
-                  "offset": 25
-                }
-              ],
-              "location": "br.com.toolsqa.web.steps.ElementSteps.queNavegoAtePaginaDe(java.lang.String)"
-            },
-            "keyword": "Dado "
-          },
-          {
-            "result": {
-              "duration": 204000000,
-              "status": "passed"
-            },
-            "line": 63,
-            "name": "clico duas vezes seguidas em \"Double Click Me\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Double Click Me\"",
-                  "offset": 29
-                }
-              ],
-              "location": "br.com.toolsqa.web.steps.ButtonsStep.clicoDuasVezesSeguidasEm(java.lang.String)"
-            },
-            "keyword": "Quando "
-          },
-          {
-            "result": {
-              "duration": 24000000,
-              "status": "passed"
-            },
-            "line": 64,
-            "name": "visualizo a mensagem \"You have done a double click\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"You have done a double click\"",
-                  "offset": 21
-                }
-              ],
-              "location": "br.com.toolsqa.web.steps.ButtonsStep.visualizoAMensagem(java.lang.String)"
-            },
-            "keyword": "Entao "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Elements"
-          },
-          {
-            "name": "@web"
-          },
-          {
-            "name": "@Buttons"
-          },
-          {
-            "name": "@DoubleClick"
-          }
-        ]
-      },
-      {
-        "line": 14,
-        "name": "Acessar Página de Elements",
-        "description": "",
-        "type": "background",
-        "keyword": "Contexto",
-        "steps": [
-          {
-            "result": {
-              "duration": 210000000,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "que clico no card \"Elements\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Elements\"",
-                  "offset": 18
-                }
-              ],
-              "location": "br.com.toolsqa.web.steps.HomeSteps.queClicoNoCard(java.lang.String)"
-            },
-            "keyword": "Dado "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-08-17T13:57:36.742Z",
-        "before": [
-          {
-            "result": {
-              "duration": 11968000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "br.com.toolsqa.settings.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 67,
-        "name": "Realizar click com botao direito",
-        "description": "",
-        "id": "elementos-do-site-toolsqa;realizar-click-com-botao-direito",
-        "after": [
-          {
-            "result": {
-              "duration": 896000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "br.com.toolsqa.settings.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Cenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 147000000,
-              "status": "passed"
-            },
-            "line": 68,
-            "name": "que navego ate pagina de \"Buttons\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Buttons\"",
-                  "offset": 25
-                }
-              ],
-              "location": "br.com.toolsqa.web.steps.ElementSteps.queNavegoAtePaginaDe(java.lang.String)"
-            },
-            "keyword": "Dado "
-          },
-          {
-            "result": {
-              "duration": 181000000,
-              "status": "passed"
-            },
-            "line": 69,
-            "name": "clico com o botao direito do mouse em \"Right Click Me\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Right Click Me\"",
-                  "offset": 38
-                }
-              ],
-              "location": "br.com.toolsqa.web.steps.ButtonsStep.clicoComOBotaoDireitoDoMouseEm(java.lang.String)"
-            },
-            "keyword": "Quando "
-          },
-          {
-            "result": {
-              "duration": 41000000,
-              "status": "passed"
-            },
-            "line": 70,
-            "name": "visualizo a mensagem \"You have done a right click\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"You have done a right click\"",
-                  "offset": 21
-                }
-              ],
-              "location": "br.com.toolsqa.web.steps.ButtonsStep.visualizoAMensagem(java.lang.String)"
-            },
-            "keyword": "Entao "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Elements"
-          },
-          {
-            "name": "@web"
-          },
-          {
-            "name": "@Buttons"
-          },
-          {
-            "name": "@RightClick"
-          }
-        ]
-      },
-      {
-        "line": 14,
-        "name": "Acessar Página de Elements",
-        "description": "",
-        "type": "background",
-        "keyword": "Contexto",
-        "steps": [
-          {
-            "result": {
-              "duration": 174000000,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "que clico no card \"Elements\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Elements\"",
-                  "offset": 18
-                }
-              ],
-              "location": "br.com.toolsqa.web.steps.HomeSteps.queClicoNoCard(java.lang.String)"
-            },
-            "keyword": "Dado "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-08-17T13:57:50.197Z",
-        "before": [
-          {
-            "result": {
-              "duration": 10998000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "br.com.toolsqa.settings.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 73,
-        "name": "Realizar click simples no botao",
-        "description": "",
-        "id": "elementos-do-site-toolsqa;realizar-click-simples-no-botao",
-        "after": [
-          {
-            "result": {
-              "duration": 829000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "br.com.toolsqa.settings.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Cenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 155000000,
-              "status": "passed"
-            },
-            "line": 74,
-            "name": "que navego ate pagina de \"Buttons\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Buttons\"",
-                  "offset": 25
-                }
-              ],
-              "location": "br.com.toolsqa.web.steps.ElementSteps.queNavegoAtePaginaDe(java.lang.String)"
-            },
-            "keyword": "Dado "
-          },
-          {
-            "result": {
-              "duration": 62000000,
-              "status": "passed"
-            },
-            "line": 75,
-            "name": "clico no botao com texto \"Click Me\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Click Me\"",
-                  "offset": 25
-                }
-              ],
-              "location": "br.com.toolsqa.web.steps.ButtonsStep.clicoNoBotaoComTexto(java.lang.String)"
-            },
-            "keyword": "Quando "
-          },
-          {
-            "result": {
-              "duration": 37000000,
-              "status": "passed"
-            },
-            "line": 76,
-            "name": "visualizo a mensagem \"You have done a dynamic click\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"You have done a dynamic click\"",
-                  "offset": 21
-                }
-              ],
-              "location": "br.com.toolsqa.web.steps.ButtonsStep.visualizoAMensagem(java.lang.String)"
-            },
-            "keyword": "Entao "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Elements"
-          },
-          {
-            "name": "@web"
-          },
-          {
-            "name": "@Buttons"
-          },
-          {
-            "name": "@SimpleClick"
           }
         ]
       }

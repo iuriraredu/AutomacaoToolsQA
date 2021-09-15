@@ -5,9 +5,7 @@ import io.cucumber.java.pt.E;
 import io.cucumber.java.pt.Entao;
 import io.cucumber.java.pt.Quando;
 
-import java.lang.reflect.Array;
-
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class WebTablesSteps {
     private WebTablesFuncionalidade webTablesFuncionalidade;

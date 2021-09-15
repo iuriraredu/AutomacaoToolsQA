@@ -4,7 +4,7 @@ import br.com.toolsqa.web.funcionalidades.ButtonsFuncionalidade;
 import io.cucumber.java.pt.Entao;
 import io.cucumber.java.pt.Quando;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class ButtonsStep {
 

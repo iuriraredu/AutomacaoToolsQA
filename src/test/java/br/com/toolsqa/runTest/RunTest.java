@@ -14,7 +14,7 @@ import org.junit.runner.RunWith;
                 "json:test-output/json/cucumber.json",
                 "html:test-output/html/cucumber-reports.html"
         },
-        tags = "@Elements"
+        tags = "@WebTables"
 )
 public class RunTest extends BaseTest {
 }

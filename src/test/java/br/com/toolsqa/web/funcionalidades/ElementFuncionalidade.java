@@ -1,7 +1,6 @@
 package br.com.toolsqa.web.funcionalidades;
 
 import br.com.toolsqa.communs.SeleniumRobot;
-import br.com.toolsqa.enums.Web;
 import br.com.toolsqa.settings.BaseTest;
 import br.com.toolsqa.web.pages.ElementPage;
 

@@ -29,9 +29,13 @@ public class HomeFuncionalidade extends BaseTest {
     }
 
     public void clicoNoCard(String opcao) {
-        if (opcao.equals("Elements"))
-            clicarNoCardElements();
-        else if (opcao.equals("Forms"))
-            clicarNoCardForms();
+        switch (opcao) {
+            case "Elements":
+                clicarNoCardElements();
+                break;
+            case "Forms":
+                clicarNoCardForms();
+                break;
+        }
     }
 }

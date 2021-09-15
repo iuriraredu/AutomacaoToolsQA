@@ -5,7 +5,7 @@ import io.cucumber.java.pt.E;
 import io.cucumber.java.pt.Entao;
 import io.cucumber.java.pt.Quando;
 
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class CheckBoxSteps {
     private CheckBoxFuncionalidade checkBoxFuncionalidade;
@@ -24,7 +24,7 @@ public class CheckBoxSteps {
     }
 
     @Entao("é apresentado a mensagem {string}")
-    public void éApresentadoAMensagem(String mensagem) {
+    public void eApresentadoAMensagem(String mensagem) {
         System.out.println(this.checkBoxFuncionalidade.pegaMensagem());
         assertEquals(mensagem, this.checkBoxFuncionalidade.pegaMensagem());
     }
